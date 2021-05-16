@@ -6,11 +6,13 @@
 
 ## Supervised
 
-- ### Classification
+- Decision Trees
+
+* ### Classification
 
   - LDA
 
-- ### Regression
+* ### Regression
 
 ## Unsupervised
 
@@ -214,5 +216,75 @@ KNN
 - model
 - train test split
 - predict
+
+---
+
+## Decision Trees
+
+Decision tree is one of the predictive modelling approaches used in statistics, data mining and machine learning.
+
+- each internal node represents a test on a feature (e.g. whether a coin flip comes up heads or tails)
+- each leaf node represents a class label
+- branches represent conjunctions of features that lead to those class labels
+
+A decision tree is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements. Wikipedia
+
+- import packages
+- load data
+- create pandas dataframe
+- train test split
+- DecisionTreeClassifier()
+- fit
+- predict
+- accuracy
+
+---
+
+## Random Forests
+
+Random Forests conbine versatility and power into a single machine-learning approach.
+
+Random Forest is a model made up of many decision trees.
+
+**Random Forests** are the result of **combining multiple trees** that are **not correlated** with each other.
+
+##### from sklearn.ensemble import RandomForestClassifier
+
+- load data
+- create pandas dataframe
+- train test split
+- RandomForestClassifier()
+- fit
+- predict
+- accuracy
+
+---
+
+## Gradient Boost - XG Boost
+
+##### from xgboost import XGBRegressor
+
+- import packages
+- load data
+- create pandas dataframe
+- Remove rows with missing target, separate target from predictors
+- train test split (Break off validation set from training data)
+- Cardinality
+- Select numeric columns
+- one hot encode
+- Define the model - XGBRegressor()
+- fit
+- predict
+- Calculate MAE
+
+---
+
+## SVM
+
+---
+
+## Naive Bayes
+
+---
 
 ---
