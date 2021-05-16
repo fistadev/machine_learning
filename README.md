@@ -7,6 +7,9 @@
 ## Supervised
 
 - Decision Trees
+- Random Forests
+- Gradient Boosts
+- SVM
 
 * ### Classification
 
@@ -279,12 +282,25 @@ Random Forest is a model made up of many decision trees.
 
 ---
 
-## SVM
+## SVM - Support Vector Machines
 
----
+##### from sklearn.svm import SVC
 
-## Naive Bayes
+##### from sklearn.metrics import accuracy_score
 
----
+##### from sklearn.model_selection import GridSearchCV
+
+Support vector Machine (SVM) is a supervised machine learning algorithm that can be used for classification and regression. The objective is to find the best splitting boundary between data. The goal is to create a **flat boundary** called **hyperplane**, which divides the space to create fairly **homogeneous partitions** on either side.
+
+Support vectors are the points from each class that are the closest to the **Maximum Margin Hyperplane (MMH)**. Each class must have at least one support vector, but ot is possible to have more than one.
+
+- import packages
+- load data
+- create pandas dataframe
+- train test split
+- Train the support vector classifier - SVC()
+- predict
+- accuracy_score()
+- get the confusion matrix
 
 ---
