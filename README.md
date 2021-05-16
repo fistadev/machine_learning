@@ -1,1 +1,181 @@
 # machine_learning
+
+##### import pandas as pd
+
+##### import numpy as np
+
+## Supervised
+
+- ### Classification
+
+  - LDA
+
+- ### Regression
+
+## Unsupervised
+
+- ### Dimension Reduction
+  - PCA
+- ### Clustering
+  - Partitional Algorithms (K-Means)
+  - Hierarchical Clustering
+- ### Association
+
+---
+
+## Linear Regression
+
+Linear regression is the most basic type of regression commonly used for
+predictive analysis. The idea is pretty simple: we have a dataset and we have
+features associated with it. Features should be chosen very cautiously
+as they determine how much our model will be able to make future predictions.
+We try to set the weight of these features, over many iterations, so that they best
+fit our dataset. We try to best fit a line through dataset and estimate the parameters.
+
+##### from sklearn.model_selection import train_test_split
+
+- import packages
+- load and inspect the data
+- plot data (scatter)
+- train test split
+- implement a least squares function to find a, b
+- plot the line with the train data
+- Classify the test data in to classes
+- plot the line with each class so we can clearly see the split
+- Get the total error
+
+---
+
+## Logistic Regression
+
+Logistic regression is a generalized linear model that we can use to model or predict categorical outcome variables. We might use logistic regression to predict whether someone will be denied or approved for a loan, but probably not to predict the value of someone's house.
+In logistic regression, we're essentially trying to find the weights that maximize the likelihood of producing our given data.
+
+##### from sklearn.linear_model import LogisticRegression
+
+- import packages
+- load data
+- plot
+- sigmoid function
+- Calculating the Log-Likelihood (sum over all the training data)
+- Building the Logistic Regression Function
+- time to do the regression
+- print weights
+- Comparing to Sk-Learn's LogisticRegression
+- implement sklearn logistic regresion and fit
+- print clf
+- accuray
+- plot results
+
+---
+
+## PCA
+
+Principal Component Analysis (**PCA**) is statistical procedure that uses an
+orthogonal transformation to convert set observations of possibly correlated
+variables into a set of values of linear uncorrelated variables called
+principal components.
+
+##### from sklearn import model_selection
+
+##### from sklearn.preprocessing import StandardScaler
+
+##### from sklearn.decomposition import PCA
+
+##### from sklearn import preprocessing
+
+##### from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
+
+- Import needed packages
+- Set random seed
+- Load the Iris dataset included with scikit-learn
+- Put data in a pandas DataFrame
+- Add target and class to DataFrame
+- start PCA
+- Plot a graph to visualize
+- Run the PCA model
+- fit transform dataframe
+- compare it with the original dataframe and to what it corresponds
+- plot it
+
+---
+
+## LDA
+
+**LDA** is a classification method using linear combination of variables
+
+##### from sklearn import model_selection
+
+##### from sklearn.preprocessing import StandardScaler
+
+##### from sklearn import preprocessing
+
+##### from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
+
+##### from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+- import packages
+- load dataset
+- Put data in a pandas DataFrame
+- Add target and class to DataFrame
+- implement the LDA
+- identify your X's and your y's
+- train-test-split
+- Scale the X's
+- apply the lda transformation
+- Run a Random Forest Classifier with the transformed data
+- Check the new acuracy! Is it higher or lower than what you obtain selecting 2 features and applying a Random Forest Directly?
+
+### LDA X PCA
+
+**LDA** is a classification method using linear combination of variables while **PCA** is a dimension reduction method.
+
+- **PCA** (Not considering labels, unsupervised)
+- **LDA** (Considering labels, supervised)
+
+### Covariance != Correlation
+
+**COVARIANCE**
+
+- Positive - both variables grow
+- Negative - One grows, other decreases
+- Zero - Variables are independent
+
+**Covariance Matrix** is the covariance of each of the variables of a dataset against all the others.
+
+- **Covariance**: a measure used to indicate the extent to which two random variables change in tandem. Covariance is a way to measure correlation.
+- **Correlation**: a measure used to represent how strongly two random variables are related.
+- **Covariance** goes from -∞ to +∞
+- **Correlation** goes from -1 to 1
+- **Covariance** is affecte by a change in scale. **Correlation** is not.
+
+---
+
+## K-Means
+
+##### from sklearn.cluster import KMeans
+
+##### from sklearn.model_selection import train_test_split
+
+##### from scipy.cluster.hierarchy import linkage, dendrogram
+
+- import packages
+- load data
+- create pandas dataframe
+- Create the class and target columns
+- clean data
+- merge
+- plot
+- start k-means
+- model
+- fit
+- predict
+- plot (points)
+- new labels
+- predict new labels
+- plot new labels (new_points)
+- plot all together
+
+---
+
+##
