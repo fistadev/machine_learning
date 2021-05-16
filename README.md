@@ -178,4 +178,41 @@ principal components.
 
 ---
 
-##
+## KNN
+
+The k-nearest neighbors algorithm (knn) is a non-parametric method used for classification and regression. The KNN algorithm treats the features as coordinates in a multidimensional feature space.
+
+#### Advantages of KNN
+
+- Intuitive and simple
+- Has no assumptions
+- no training step
+- variety of distance criteria to be choose from
+- constantly evolves
+- "easy" to implement for multi-class problem
+
+#### Disadvantages of KNN
+
+- slow algorithm
+- curse of dimensionality
+- optimal number of neighbors
+- outlier sensitivity
+- imbalanced data causes problems
+- missing value treatment
+
+KNN
+
+- import libraries
+- make the dataset
+- plot the dataset
+- implement square diff
+- implement root sum squares
+- euclidean_distances
+- evaluate
+- Create the KNN prediction function
+- fit
+- model
+- train test split
+- predict
+
+---
