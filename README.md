@@ -1,21 +1,30 @@
 # Machine Learning Algorithms
 
-##### import pandas as pd
-
-##### import numpy as np
+```py
+import pandas as pd
+import numpy as np
+```
 
 ## Supervised
 
-- Decision Trees
-- Random Forests
-- Gradient Boosts
+- Decision Tree
+- Random Forest
+- Gradient Boost
 - SVM
+
+<br>
 
 * ### Classification
 
   - LDA
 
+<br>
+
 * ### Regression
+
+
+<br>
+<br>
 
 ## Unsupervised
 
@@ -26,7 +35,9 @@
   - Hierarchical Clustering
 - ### Association
 
----
+<br>
+<hr>
+<br>
 
 ## Linear Regression
 
@@ -49,7 +60,9 @@ fit our dataset. We try to best fit a line through dataset and estimate the para
 - plot the line with each class so we can clearly see the split
 - Get the total error
 
----
+<br>
+<hr>
+<br>
 
 ## Logistic Regression
 
@@ -72,7 +85,9 @@ In logistic regression, we're essentially trying to find the weights that maximi
 - accuray
 - plot results
 
----
+<br>
+<hr>
+<br>
 
 ## PCA
 
@@ -103,7 +118,9 @@ principal components.
 - compare it with the original dataframe and to what it corresponds
 - plot it
 
----
+<br>
+<hr>
+<br>
 
 ## LDA
 
@@ -131,12 +148,20 @@ principal components.
 - Run a Random Forest Classifier with the transformed data
 - Check the new acuracy! Is it higher or lower than what you obtain selecting 2 features and applying a Random Forest Directly?
 
+
+<br>
+
+
 ### LDA X PCA
 
 **LDA** is a classification method using linear combination of variables while **PCA** is a dimension reduction method.
 
 - **PCA** (Not considering labels, unsupervised)
 - **LDA** (Considering labels, supervised)
+
+
+<br>
+
 
 ### Covariance != Correlation
 
@@ -154,7 +179,11 @@ principal components.
 - **Correlation** goes from -1 to 1
 - **Covariance** is affecte by a change in scale. **Correlation** is not.
 
----
+
+<br>
+<hr>
+<br>
+
 
 ## K-Means
 
@@ -181,7 +210,11 @@ principal components.
 - plot new labels (new_points)
 - plot all together
 
----
+
+<br>
+<hr>
+<br>
+
 
 ## KNN
 
@@ -220,7 +253,11 @@ KNN
 - train test split
 - predict
 
----
+
+<br>
+<hr>
+<br>
+
 
 ## Decision Trees
 
@@ -241,7 +278,11 @@ A decision tree is a decision support tool that uses a tree-like model of decisi
 - predict
 - accuracy
 
----
+
+<br>
+<hr>
+<br>
+
 
 ## Random Forests
 
@@ -261,7 +302,11 @@ Random Forest is a model made up of many decision trees.
 - predict
 - accuracy
 
----
+
+<br>
+<hr>
+<br>
+
 
 ## Gradient Boost - XG Boost
 
@@ -280,7 +325,11 @@ Random Forest is a model made up of many decision trees.
 - predict
 - Calculate MAE
 
----
+
+<br>
+<hr>
+<br>
+
 
 ## SVM - Support Vector Machines
 
@@ -303,4 +352,8 @@ Support vectors are the points from each class that are the closest to the **Max
 - accuracy_score()
 - get the confusion matrix
 
----
+
+<br>
+<hr>
+<br>
+
