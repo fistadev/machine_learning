@@ -48,7 +48,9 @@ as they determine how much our model will be able to make future predictions.
 We try to set the weight of these features, over many iterations, so that they best
 fit our dataset. We try to best fit a line through dataset and estimate the parameters.
 
-##### from sklearn.model_selection import train_test_split
+```py
+from sklearn.model_selection import train_test_split
+```
 
 - import packages
 - load and inspect the data
@@ -69,7 +71,9 @@ fit our dataset. We try to best fit a line through dataset and estimate the para
 Logistic regression is a generalized linear model that we can use to model or predict categorical outcome variables. We might use logistic regression to predict whether someone will be denied or approved for a loan, but probably not to predict the value of someone's house.
 In logistic regression, we're essentially trying to find the weights that maximize the likelihood of producing our given data.
 
-##### from sklearn.linear_model import LogisticRegression
+```py
+from sklearn.linear_model import LogisticRegression
+```
 
 - import packages
 - load data
@@ -96,15 +100,13 @@ orthogonal transformation to convert set observations of possibly correlated
 variables into a set of values of linear uncorrelated variables called
 principal components.
 
-##### from sklearn import model_selection
-
-##### from sklearn.preprocessing import StandardScaler
-
-##### from sklearn.decomposition import PCA
-
-##### from sklearn import preprocessing
-
-##### from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
+```py
+from sklearn import model_selection
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn import preprocessing
+from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
+```
 
 - Import needed packages
 - Set random seed
@@ -126,15 +128,13 @@ principal components.
 
 **LDA** is a classification method using linear combination of variables
 
-##### from sklearn import model_selection
-
-##### from sklearn.preprocessing import StandardScaler
-
-##### from sklearn import preprocessing
-
-##### from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
-
-##### from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+```py
+from sklearn import model_selection
+from sklearn.preprocessing import StandardScaler
+from sklearn import preprocessing
+from sklearn.model_selection import KFold, LeaveOneOut, cross_val_score
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+```
 
 - import packages
 - load dataset
@@ -187,11 +187,11 @@ principal components.
 
 ## K-Means
 
-##### from sklearn.cluster import KMeans
-
-##### from sklearn.model_selection import train_test_split
-
-##### from scipy.cluster.hierarchy import linkage, dendrogram
+```py
+from sklearn.cluster import KMeans
+from sklearn.model_selection import train_test_split
+from scipy.cluster.hierarchy import linkage, dendrogram
+```
 
 - import packages
 - load data
@@ -292,7 +292,9 @@ Random Forest is a model made up of many decision trees.
 
 **Random Forests** are the result of **combining multiple trees** that are **not correlated** with each other.
 
-##### from sklearn.ensemble import RandomForestClassifier
+```py
+from sklearn.ensemble import RandomForestClassifier
+```
 
 - load data
 - create pandas dataframe
@@ -310,7 +312,10 @@ Random Forest is a model made up of many decision trees.
 
 ## Gradient Boost - XG Boost
 
-##### from xgboost import XGBRegressor
+
+```py
+from xgboost import XGBRegressor
+```
 
 - import packages
 - load data
@@ -333,11 +338,11 @@ Random Forest is a model made up of many decision trees.
 
 ## SVM - Support Vector Machines
 
-##### from sklearn.svm import SVC
-
-##### from sklearn.metrics import accuracy_score
-
-##### from sklearn.model_selection import GridSearchCV
+```py
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import GridSearchCV
+```
 
 Support vector Machine (SVM) is a supervised machine learning algorithm that can be used for classification and regression. The objective is to find the best splitting boundary between data. The goal is to create a **flat boundary** called **hyperplane**, which divides the space to create fairly **homogeneous partitions** on either side.
 
