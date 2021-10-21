@@ -1,4 +1,5 @@
 # Machine Learning Algorithms
+![machine learning](https://www.ionos.it/digitalguide/fileadmin/DigitalGuide/Teaser/deep-learning-vs-machine-learning-t.jpg)
 
 ```py
 import pandas as pd
