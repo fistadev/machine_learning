@@ -28,7 +28,7 @@ import numpy as np
 
 * ### Regression
 
-- Linear Regression
+  - Linear Regression
 
 
 <br>
