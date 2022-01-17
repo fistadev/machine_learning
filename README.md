@@ -17,6 +17,11 @@ import numpy as np
 
 * ### Classification
 
+  - Logistic Regression
+  - Naive Bayes
+  - K-Nearest Neighbors
+  - Decision Tree
+  - Support Vector Machines (SVM)
   - LDA
 
 <br>
