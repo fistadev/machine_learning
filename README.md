@@ -28,6 +28,8 @@ import numpy as np
 
 * ### Regression
 
+- Linear Regression
+
 
 <br>
 <br>
